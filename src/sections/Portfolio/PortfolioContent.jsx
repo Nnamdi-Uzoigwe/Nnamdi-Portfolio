@@ -36,12 +36,12 @@ export default function PortfolioContent() {
         }
     ]
     return (
-        <div className="bg-[#F9FAFB] mt-[200px] px-40 py-20">
+        <div className="bg-[#F9FAFB] mt-[200px] px-8 lg:px-40 py-20">
             <h3 className="underline">Portfolio</h3>
             <p>Some of the noteworthy projects I have worked on: </p>
 
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                 {data.map((item) => (
                     <Card
                         img={item.img} 

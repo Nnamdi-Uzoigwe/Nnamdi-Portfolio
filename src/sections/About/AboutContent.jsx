@@ -2,10 +2,10 @@ import about from "../../assets/about.png";
 
 export default function AboutContent() {
   return (
-    <div className="bg-[#F9FAFB] mt-[200px] px-40 py-20">
+    <div className="bg-[#F9FAFB] mt-[200px] px-8 lg:px-40 py-20">
       <h3 className="underline">About Me</h3>
 
-      <div className="mt-10 grid grid-cols-2">
+      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2">
         <div>
           <img src={about} alt="" />
         </div>

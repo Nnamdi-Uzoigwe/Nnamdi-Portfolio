@@ -57,11 +57,11 @@ export default function SkillContent() {
         }
     ]
     return (
-        <div className="bg-white py-20 px-40">
+        <div className="bg-white py-20 px-8 lg:px-40">
             <h2 className="underline text-center">Skills</h2>
             <p className="text-center mb-10 text-gray-600">Below are some of the skills, tools and technologies I am really good at</p>
 
-            <div className="grid grid-cols-6 gap-4 justify-items-center">
+            <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 justify-items-center">
                 {data.map((item) => (
                     <div key={item.id} className="flex flex-col items-center justify-between">
                         <img src={item.img} alt="" />

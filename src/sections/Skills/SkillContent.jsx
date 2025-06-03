@@ -1,0 +1,74 @@
+import js from "../../assets/javascript.png"
+import react from "../../assets/react.png"
+import ts from "../../assets/ts.png"
+import next from "../../assets/next.png"
+import node from "../../assets/node.png"
+import express from "../../assets/express.png"
+import mongodb from "../../assets/mongo.png"
+import tailwindcss from "../../assets/tailwind.png"
+import git from "../../assets/git.png"
+
+export default function SkillContent() {
+    const data = [
+        {
+            id: 1,
+            name: "JavaScript",
+            img: js
+        },
+        {
+            id: 2,
+            name: "TypeScript",
+            img: ts
+        },
+        {
+            id: 3,
+            name: "React",
+            img: react
+        },
+        {
+            id: 4,
+            name: "Next.js",
+            img: next
+        },
+        {
+            id: 5,
+            name: "Node.js",
+            img: node
+        },
+        {
+            id: 6,
+            name: "Express.js",
+            img: express
+        },
+        {
+            id: 7,
+            name: "MongoDB",
+            img: mongodb
+        },
+        {
+            id: 8,
+            name: "Tailwind",
+            img: tailwindcss
+        },
+        {
+            id: 9,
+            name: "Git",
+            img: git
+        }
+    ]
+    return (
+        <div className="bg-white py-20 px-40">
+            <h2 className="underline text-center">Skills</h2>
+            <p className="text-center mb-10 text-gray-600">Below are some of the skills, tools and technologies I am really good at</p>
+
+            <div className="grid grid-cols-6 gap-4 justify-items-center">
+                {data.map((item) => (
+                    <div key={item.id} className="flex flex-col items-center justify-between">
+                        <img src={item.img} alt="" />
+                        <p>{item.name}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}

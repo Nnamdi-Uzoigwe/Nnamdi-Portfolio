@@ -53,19 +53,19 @@ const Navbar = () => {
             <div>
 
             <div className="flex flex-col w-full mt-6">
-              <a href="#about" className="hover:text-teal-400">
+              <a href="#about" onClick={handleClose} className="hover:text-teal-400">
                 About Me
               </a>
 
-              <a href="#skills" className="hover:text-teal-400">
+              <a href="#skills" onClick={handleClose} className="hover:text-teal-400">
                 My Skills
               </a>
 
-              <a href="#portfolio" className="hover:text-teal-400">
+              <a href="#portfolio" onClick={handleClose} className="hover:text-teal-400">
                 Portfolio
               </a>
 
-              <a href="#contact" className="hover:text-teal-400">
+              <a href="#contact" onClick={handleClose} className="hover:text-teal-400">
                 Contact Me
               </a>
               

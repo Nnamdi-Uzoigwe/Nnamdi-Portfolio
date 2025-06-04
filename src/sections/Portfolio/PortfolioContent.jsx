@@ -3,6 +3,7 @@ import lilies from "../../assets/lilies.png"
 import Card from "../../components/Card"
 import vilancy from "../../assets/vilancy.png"
 import foodie from "../../assets/foodie.png"
+import Button from "../../components/Button"
 
 export default function PortfolioContent() {
     const data = [
@@ -36,7 +37,7 @@ export default function PortfolioContent() {
         }
     ]
     return (
-        <div className="bg-[#F9FAFB] mt-[200px] px-8 lg:px-40 py-20">
+        <div className="bg-[#F9FAFB] mt-[50px] px-8 lg:px-40 py-20">
             <h3 className="underline">Portfolio</h3>
             <p>Some of the noteworthy projects I have worked on: </p>
 
@@ -50,6 +51,10 @@ export default function PortfolioContent() {
                         stack={item.stack}  
                     />
                 ))}
+            </div>
+
+            <div className="mt-4">
+                <Button>See More</Button>
             </div>
         </div>
     )

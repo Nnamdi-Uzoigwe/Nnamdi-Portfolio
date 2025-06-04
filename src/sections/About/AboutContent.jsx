@@ -1,4 +1,4 @@
-import about from "../../assets/about.png";
+import myimg from "../../assets/myimg.jpeg";
 
 export default function AboutContent() {
   return (
@@ -7,7 +7,7 @@ export default function AboutContent() {
 
       <div className="mt-10 grid grid-cols-1 lg:grid-cols-2">
         <div>
-          <img src={about} alt="" />
+          <img src={myimg} alt="" className="w-[100%] lg:w-[50%]" />
         </div>
 
         <div>

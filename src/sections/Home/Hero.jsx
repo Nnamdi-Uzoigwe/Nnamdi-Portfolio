@@ -1,11 +1,11 @@
 
 import Button from "../../components/Button";
-import hero from "../../assets/Column.png";
+import bitmoji from "../../assets/bitmoji.png";
 import { Dot, Github, Linkedin, MapPin, Twitter } from "lucide-react";
 
 export default function Hero() {
     return (
-        <div className="mt-[200px] px-8">
+        <div className="mt-[200px] px-8 lg:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center gap-10">
                 <div className="text-gray-600 text-center lg:text-left">
                     <h4 className="text-2xl font-semibold">Welcome to my page!</h4>
@@ -36,8 +36,8 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div>
-                    <img src={hero} alt="Hero" className="w-full max-w-md" />
+                <div className="rounded-[20px]">
+                    <img src={bitmoji} alt="Hero" className="w-full max-w-md" />
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="py-6 px-8 lg:px-40 border-t-[1px] border-gray-300 bg-gray-100 dark:bg-[#111827]">
+        <div className="py-6 px-8 lg:px-40 bg-gray-100 dark:bg-[#111827]">
             <div className="flex flex-col lg:flex-row gap-3 justify-between items-center">
                 <p className="font-semibold text-teal-500 text-lg">Nnamdi Uzoigwe</p>
                 

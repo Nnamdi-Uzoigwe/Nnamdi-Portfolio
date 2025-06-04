@@ -28,18 +28,21 @@ import Button from "../../components/Button";
 
 export default function ContactSection() {
   return (
-    <div className="bg-white flex flex-col justify-center items-center py-20 px-8 lg:px-40">
+    <div className="bg-white flex flex-col justify-center items-center py-10 lg:py-20 px-8 lg:px-40">
       <div className="text-center max-w-2xl">
-        <h4 className="text-2xl font-bold mb-4 text-gray-800">Contact Me</h4>
-        <p className="text-gray-600 mb-12">
-          Drop a message if you're looking for a developer or have inquiries. 
+        <h4 className="text-teal-500 text-center font-semibold">Contact Me</h4>
+        <p className="text-gray-600 my-10">
+          Drop a message if you're looking for a developer or have inquiries.
           I'll respond promptly!
         </p>
       </div>
 
       <form className="mt-6 bg-white rounded-xl border border-gray-200 shadow-lg w-full max-w-md py-8 px-6 hover:shadow-xl transition-shadow duration-300">
         <div className="mb-6">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
             Your Name
           </label>
           <input
@@ -51,7 +54,10 @@ export default function ContactSection() {
         </div>
 
         <div className="mb-8">
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
             Your Message
           </label>
           <textarea
@@ -62,10 +68,12 @@ export default function ContactSection() {
           />
         </div>
 
-        <Button className="w-full flex items-center justify-center gap-2 group">
-          Send Message
-          <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-        </Button>
+        <div className="flex justify-center">
+          <Button>
+            Send Message
+            <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </div>
       </form>
     </div>
   );

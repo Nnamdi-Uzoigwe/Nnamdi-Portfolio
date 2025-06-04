@@ -2,17 +2,17 @@ import myimg from "../../assets/myimg.jpeg";
 
 export default function AboutContent() {
   return (
-    <div className="bg-[#F9FAFB] mt-[200px] px-8 lg:px-40 py-20">
-      <h3 className="underline">About Me</h3>
+    <div className="bg-[#F9FAFB] mt-[50px] lg:mt-[200px] px-8 lg:px-40 py-10 lg:py-20">
+      <h3 className="font-semibold text-teal-500 text-center">About Me</h3>
 
-      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2">
+      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4">
         <div>
           <img src={myimg} alt="" className="w-[100%] lg:w-[50%]" />
         </div>
 
         <div>
 
-        <p>
+        <p className="text-center lg:text-left text-gray-600">
           I began my journey as a web developer in 2015, and since then, I've
           continued to grow and evolve as a developer, taking on new challenges
           and learning the latest technologies along the way. Now, in my early
@@ -21,7 +21,7 @@ export default function AboutContent() {
           as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
         </p>
         
-        <p>
+        <p className="text-center lg:text-left text-gray-600">
           I began my journey as a web developer in 2015, and since then, I've
           continued to grow and evolve as a developer, taking on new challenges
           and learning the latest technologies along the way. Now, in my early

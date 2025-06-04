@@ -5,12 +5,12 @@ import { Dot, Github, Linkedin, MapPin, Twitter } from "lucide-react";
 
 export default function Hero() {
     return (
-        <div className="mt-[200px] px-8 lg:px-40">
+        <div className="mt-[150px] lg:mt-[200px] px-8 lg:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center gap-10">
                 <div className="text-gray-600 text-center lg:text-left">
-                    <h4 className="text-2xl font-semibold">Welcome to my page!</h4>
-                    <h2 className="text-3xl lg:text-4xl font-semibold">I am Nnamdi Uzoigwe,</h2>
-                    <h2 className="text-3xl lg:text-4xl font-semibold">A Web and Mobile App Developer.</h2>
+                    <h4 className="text-xl lg:text-2xl font-semibold">Welcome to my page!</h4>
+                    <h2 className="text-2xl lg:text-4xl font-semibold">I am <span className="text-teal-500">Nnamdi Uzoigwe,</span></h2>
+                    <h2 className="text-2xl lg:text-4xl font-semibold">a Web and Mobile App Developer.</h2>
                     <p className="my-6 w-full lg:w-[70%]">
                         I create visually appealing interfaces and applications for clients
                         using the latest technologies in vogue.

@@ -1,11 +1,27 @@
 import { Moon, SunMedium, SunMoon, ToggleLeft } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({ toggleDarkMode, darkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false)
+  // const [darkMode, setDarkMode] = useState(false);
+  
+  //   useEffect(() => {
+  //   const storedTheme = localStorage.getItem('theme');
+  //   if (storedTheme === 'dark') setDarkMode(true);
+  // }, []);
+  
+  //  useEffect(() => {
+  //     if (darkMode) {
+  //       document.documentElement.classList.add('dark');
+  //       localStorage.setItem('theme', 'dark');
+  //     } else {
+  //       document.documentElement.classList.remove('dark');
+  //       localStorage.setItem('theme', 'light');
+  //     }
+  //   }, [darkMode]);
+
 
   function handleOpen() {
     setIsOpen(true);
@@ -15,7 +31,7 @@ const Navbar = () => {
     setIsOpen(false);
   }
   return (
-    <nav className="fixed top-[30px] lg:top-[35px] left-1/2 transform -translate-x-1/2 w-[90%] lg:w-[80%] bg-white/10 border-[1px] border-gray-300 backdrop-blur-sm rounded-[16px] shadow-MD z-50">
+    <nav className="fixed top-[30px] lg:top-[35px] left-1/2 transform -translate-x-1/2 w-[90%] lg:w-[80%] bg-white/10 dark:bg-[#030712] dark:text-white border-[1px] border-gray-300 dark:border-gray-600 backdrop-blur-sm rounded-[16px] shadow-MD z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center relative">
         <h1 className="text-xl font-bold text-teal-500">Nnamdi Uzoigwe</h1>
 
@@ -38,7 +54,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex gap-2 items-center">
-          <SunMoon className="cursor-pointer" />
+          {/* <SunMoon className="cursor-pointer" onClick={() => setDarkMode(!darkMode)} /> */}
+          {darkMode ? <Moon className="cursor-pointer" onClick={toggleDarkMode} /> 
+          : <SunMedium className="cursor-pointer" onClick={toggleDarkMode} />}
         </div>
 
         <div className="block lg:hidden">
@@ -49,7 +67,7 @@ const Navbar = () => {
         </div>
 
         {isOpen && (
-          <div className="absolute top-0 right-0 z-50 h-auto w-[60%] lg:hidden bg-white border-2 border-gray-300 rounded-md py-6  backdrop-blur-sm flex flex-col justify-between">
+          <div className="absolute top-0 right-0 z-50 h-auto w-[60%] lg:hidden bg-white dark:bg-black dark:text-white border-2 border-gray-300 rounded-md py-6  backdrop-blur-sm flex flex-col justify-between">
             <div className="flex flex-col mt-5 space-y-3 px-4">
               <a
                 href="#about"
@@ -83,7 +101,7 @@ const Navbar = () => {
 
             <div className="w-full mt-6 px-4 border-t border-gray-300 pt-4 flex items-center justify-between">
               <p>Switch Theme</p>
-              {isDark ?  <SunMedium className="cursor-pointer" /> : <Moon className="cursor-pointer" />}
+              {darkMode ? <Moon className="cursor-pointer" onClick={toggleDarkMode} /> : <SunMedium className="cursor-pointer" onClick={toggleDarkMode} />}
             </div>
 
             <MdClose

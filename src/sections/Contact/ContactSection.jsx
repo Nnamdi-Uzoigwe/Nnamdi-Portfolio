@@ -28,20 +28,20 @@ import Button from "../../components/Button";
 
 export default function ContactSection() {
   return (
-    <div className="bg-white flex flex-col justify-center items-center py-10 lg:py-20 px-8 lg:px-40">
+    <div className="bg-white dark:bg-[#030712] flex flex-col justify-center items-center py-10 lg:py-20 px-8 lg:px-40">
       <div className="text-center max-w-2xl">
-        <h4 className="text-teal-500 text-center font-semibold">Contact Me</h4>
-        <p className="text-gray-600 my-10">
+        <h4 className="text-teal-500 text-center font-semibold text-xl">Contact Me</h4>
+        <p className="text-gray-600 dark:text-gray-200 my-10">
           Drop a message if you're looking for a developer or have inquiries.
           I'll respond promptly!
         </p>
       </div>
 
-      <form className="mt-6 bg-white rounded-xl border border-gray-200 shadow-lg w-full max-w-md py-8 px-6 hover:shadow-xl transition-shadow duration-300">
+      <form className="mt-6 bg-white dark:bg-[#1F2937] dark:text-gray-200 rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg w-full max-w-md py-8 px-6 hover:shadow-xl transition-shadow duration-300">
         <div className="mb-6">
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1"
           >
             Your Name
           </label>
@@ -49,14 +49,14 @@ export default function ContactSection() {
             type="text"
             id="name"
             placeholder="e.g. Jane Doe"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all"
+            className="w-full px-4 py-2 dark:placeholder:text-gray-400 border border-gray-300 rounded-lg focus:ring-2  focus:ring-teal-500 focus:border-teal-500 outline-none transition-all"
           />
         </div>
 
         <div className="mb-8">
           <label
             htmlFor="message"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1"
           >
             Your Message
           </label>
@@ -64,7 +64,7 @@ export default function ContactSection() {
             id="message"
             placeholder="Hello! I'd like to discuss..."
             rows={5}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all"
+            className="w-full px-4 py-3 dark:placeholder:text-gray-400 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all"
           />
         </div>
 

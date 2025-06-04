@@ -37,9 +37,9 @@ export default function PortfolioContent() {
         }
     ]
     return (
-        <div className="bg-[#F9FAFB] mt-[50px] px-8 lg:px-40 py-10 lg:py-20">
-            <h3 className="text-teal-500 text-center font-semibold">Portfolio</h3>
-            <p className="text-center my-10">Some of the noteworthy projects I have worked on: </p>
+        <div className="bg-[#F9FAFB] dark:bg-[#111827] mt-[50px] px-8 lg:px-40 py-10 lg:py-20">
+            <h3 className="text-teal-500 text-center font-semibold text-xl">Portfolio</h3>
+            <p className="text-center my-10 dark:text-gray-200">Some of the noteworthy projects I have worked on: </p>
 
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">

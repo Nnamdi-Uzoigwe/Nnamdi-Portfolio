@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 * {
     scroll-behavior: smooth;
     font-family: "Instrument Sans", "Lora", sans-serif;

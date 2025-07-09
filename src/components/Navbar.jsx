@@ -2,26 +2,8 @@ import { Moon, SunMedium, SunMoon, ToggleLeft } from "lucide-react";
 import { useState, useEffect } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
-
 const Navbar = ({ toggleDarkMode, darkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [darkMode, setDarkMode] = useState(false);
-  
-  //   useEffect(() => {
-  //   const storedTheme = localStorage.getItem('theme');
-  //   if (storedTheme === 'dark') setDarkMode(true);
-  // }, []);
-  
-  //  useEffect(() => {
-  //     if (darkMode) {
-  //       document.documentElement.classList.add('dark');
-  //       localStorage.setItem('theme', 'dark');
-  //     } else {
-  //       document.documentElement.classList.remove('dark');
-  //       localStorage.setItem('theme', 'light');
-  //     }
-  //   }, [darkMode]);
-
 
   function handleOpen() {
     setIsOpen(true);

@@ -13,10 +13,10 @@ export default function AboutContent() {
         <div>
 
         <p className="text-center lg:text-left text-gray-600 dark:text-gray-200">
-          I began my journey as a web developer in 2015, and since then, I've
+          I began my journey as a web developer in 2020, and since then, I've
           continued to grow and evolve as a developer, taking on new challenges
           and learning the latest technologies along the way. Now, in my early
-          thirties, 7 years after starting my web development journey, I'm
+          thirties, 5 years after starting my web development journey, I'm
           building cutting-edge web applications using modern technologies such
           as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
         </p>
@@ -25,7 +25,7 @@ export default function AboutContent() {
           I began my journey as a web developer in 2015, and since then, I've
           continued to grow and evolve as a developer, taking on new challenges
           and learning the latest technologies along the way. Now, in my early
-          thirties, 7 years after starting my web development journey, I'm
+          twenties, 7 years after starting my web development journey, I'm
           building cutting-edge web applications using modern technologies such
           as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
         </p>
